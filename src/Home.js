@@ -81,6 +81,6 @@ export default Home;
 /blogs/{id}     DELETE  Delete a blog
 
 
-C:\Users\showe\OneDrive\Documents\Don\Codecademy\PROJECTS\React
+OneDrive/Documents/Don/Codecademy/PROJECTS/React/jammming
 
 */
