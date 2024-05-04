@@ -34,14 +34,14 @@ const Home = () => {
 
     return (
         <div className="home">
-            {isPending && <div>Loading...</div> }
+            {isPending && <div className="loading">Loading...</div> }
             {error && <div>{error}</div> }
                 {isPending && <div className='blog-preview-skeleton'>
                         <div>
                             <h2>...</h2>
                             <p>...</p>
                         </div>
-                        <div>
+                        {/* <div>
                             <h2>...</h2>
                             <p>...</p>
                         </div>
@@ -56,7 +56,7 @@ const Home = () => {
                         <div>
                             <h2>...</h2>
                             <p>...</p>
-                        </div>
+                        </div> */}
                     </div>}
             {blogs && <BlogList //conditional templating - if no data in "blogs" it will not bother with the "BlogList".
                 blogs={blogs} 

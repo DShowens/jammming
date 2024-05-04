@@ -21,7 +21,6 @@ const Create = () => {
         body: JSON.stringify(blog) 
     }).then(() => {
         setIsPending(false)
-        console.log ('New Blog Added.')
         // history.go(-1);  This would take us back one page (1) would go forward one
         history.push('/');  // This redirects to the "endpoint" we put into the string
 }) 

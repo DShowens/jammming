@@ -70,6 +70,12 @@
     margin-bottom: 8px;
 }
 
+.loading {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
 .blog-preview a {
     text-decoration: none;
 }
@@ -85,14 +91,15 @@
     margin: 20px 0;
 }
 
-/* .blog-details button {
+.blog-details button {
     background: #f1356d;
     color: #fff;
     border: 0;
     padding: 8px;
     border-radius: 8px;
     cursor: pointer; 
- } */
+ }
+
 /* Create new blog form */
 .create {
     max-width: 400px;
@@ -127,4 +134,29 @@
     padding: 8px;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.not-found {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+    
+}
+
+.not-found h2 {
+    font-size: 3rem;
+    color: #f1356d;
+    margin-bottom: 30px;
+}
+.not-found p {
+    font-size: 1.5rem;
+    color: #333;
+    padding-block: 1rem;
+    text-decoration: none;
+}
+.not-found a {
+    font-size: 1.5rem;
+    color: #f1356d;
+    padding-top: 2rem;
+    text-decoration: none;
 }
