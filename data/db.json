@@ -1,16 +1,40 @@
 {
-    "blogs": [
-        {
-            "title": "My First Blog",
-            "body": "Why do we use it? \nIt is a long established fact that a reader will be distratcted...",
-            "author": "Mario",
-            "id": 1
-        },
-        {
-            "title": "Opening Party!",
-            "body": "Why do we use it? \nIt is a long established fact that a reader will be distratcted...",
-            "author": "Yoshi",
-            "id": 2
-        }
-    ]
+  "blogs": [
+    {
+      "title": "My First Blog",
+      "body": "Why do we use it? \nIt is a long established fact that a reader will be distratcted...",
+      "author": "Mario",
+      "id": "1"
+    },
+    {
+      "title": "Opening Party!",
+      "body": "Why do we use it? \nIt is a long established fact that a reader will be distratcted...",
+      "author": "Yoshi",
+      "id": "2"
+    },
+    {
+      "id": "e6ec",
+      "title": "New Creation",
+      "body": "This is a new blog that I created with the POST method of the fetch.  I also logged to the console to show it got to the \"then\" portion.",
+      "author": "Yoshi"
+    },
+    {
+      "id": "f3ea",
+      "title": "Second New Blog",
+      "body": "This time I added a loading state to the button to show that it is in progress.",
+      "author": "Mario"
+    },
+    {
+      "id": "4a33",
+      "title": "Third new blog",
+      "body": "This should create new and then redirect us to the home page.",
+      "author": "Yoshi"
+    },
+    {
+      "id": "f670",
+      "title": "Bobbi's First Blog",
+      "body": "I love Tea!!! And you can't stop me!",
+      "author": "Bobbi"
+    }
+  ]
 }
