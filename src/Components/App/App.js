@@ -3,6 +3,7 @@ import styles from "./App.module.css";
 import SearchResults from '../SearchResults/SearchResults';
 import Playlist from '../Playlist/Playlist';
 import SearchBar from '../SearchBar/SearchBar';
+import { Spotify } from "../../util/Spotify";
 
 function App() {
 
@@ -43,16 +44,6 @@ function App() {
     }
   ]);
 
-  // const addTrack = (track) => {
-  //   playlistTracks.map((Song) => {
-  //     if (song.id === track.id) {
-  //       alert('Song is already in your playlist');
-  //     } else {
-  //       setPlaylistTracks([...playlistTracks, track]);
-  //     }
-  //   })
-  // };
-
   function addTrack(track) {
     const existingTrack = playlistTracks.find(t => t.id === track.id)
     const newTrack = playlistTracks.concat(track);
@@ -77,7 +68,7 @@ function App() {
   };
 
   function search(searchTerm) {
-    console.log(searchTerm)
+    Spotify.search(searchTerm).then(result => setSearchResults(result))
   };
 
   return (
