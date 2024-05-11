@@ -1,7 +1,7 @@
 
 let accessToken;
 const clientID = "f125d921b84b42deb0294e5ce62d4625";
-const redirectUrl = "http://localhost:3000";
+const redirectUrl = "https://eatable-quilt.surge.sh";
 
 const Spotify = {
     getAccessToken() {
