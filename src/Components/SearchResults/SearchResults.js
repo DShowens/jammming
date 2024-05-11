@@ -10,7 +10,7 @@ const SearchResults = (props) => {
             <Tracklist 
                 userSearchResults={props.userSearchResults} 
                 onAdd={props.onAdd} 
-                isRemoval={true} 
+                isRemoval={false} 
             />
         </div>
      );
