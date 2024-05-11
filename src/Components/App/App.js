@@ -8,40 +8,40 @@ import { Spotify } from "../../util/Spotify";
 function App() {
 
   const [searchResults, setSearchResults] = useState([
-    {
-      name: "Example Track Name 1",
-      artist: "Example Track Artist 1",
-      album: "Example Track Album 1",
-      id: 1,
-    },
-    {
-      name: "Example Track Name 2",
-      artist: "Example Track Artist 2",
-      album: "Example Track Album 2",
-      id: 2,
-    },
+    // {
+    //   name: "Example Track Name 1",
+    //   artist: "Example Track Artist 1",
+    //   album: "Example Track Album 1",
+    //   id: 1,
+    // },
+    // {
+    //   name: "Example Track Name 2",
+    //   artist: "Example Track Artist 2",
+    //   album: "Example Track Album 2",
+    //   id: 2,
+    // },
   ]);
 
   const [playlistName, setPlaylistName] = useState("Example Playlist Name");
   const [playlistTracks, setPlaylistTracks] = useState([
-    {
-      name: "Example Playlist Track Name 1",
-      artist: "Example Playlist Track Artist 1", 
-      album: "Example Playlist Track Album 1",
-      id: 1,
-    },
-    {
-      name: "Example Playlist Track Name 2",
-      artist: "Example Playlist Track Artist 2", 
-      album: "Example Playlist Track Album 2",
-      id: 2,
-    },
-    {
-      name: "Example Playlist Track Name 3",
-      artist: "Example Playlist Track Artist 3", 
-      album: "Example Playlist Track Album 3",
-      id: 3,
-    }
+    // {
+    //   name: "Example Playlist Track Name 1",
+    //   artist: "Example Playlist Track Artist 1", 
+    //   album: "Example Playlist Track Album 1",
+    //   id: 1,
+    // },
+    // {
+    //   name: "Example Playlist Track Name 2",
+    //   artist: "Example Playlist Track Artist 2", 
+    //   album: "Example Playlist Track Album 2",
+    //   id: 2,
+    // },
+    // {
+    //   name: "Example Playlist Track Name 3",
+    //   artist: "Example Playlist Track Artist 3", 
+    //   album: "Example Playlist Track Album 3",
+    //   id: 3,
+    // }
   ]);
 
   function addTrack(track) {
