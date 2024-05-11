@@ -81,18 +81,33 @@ function App() {
         Ja<span className={styles.highlight}>mmm</span>ing
       </h1>
       <div className={styles.App}>
-       {/* <!-- Add a searchBar component --> */}
         <SearchBar onSearch={search}/>
-        
         <div className={styles['App-playlist']}>
-          <SearchResults userSearchResults={searchResults} onAdd={addTrack}/>
-          <Playlist 
+          {!searchResults && 
+            <div>
+              <h2>Search results will populate here.</h2>
+              <p>Once the search is displayed you will be able to add any of the songs
+                to your personal Spotify account as a playlist.
+              </p>
+            </div>
+            }
+          {searchResults && <SearchResults userSearchResults={searchResults} onAdd={addTrack}/>}
+          {!playlistTracks && 
+            <div>
+              <h2>Playlist compliation will populate here.</h2>
+              <p>Once you are finished adding songs to your playlist, click on the 
+                Save To Spotify button below.
+              </p>
+            </div>
+
+          }
+          {playlistTracks && <Playlist 
             playlistName={playlistName} 
             playlistTracks={playlistTracks}
             onRemove={removeTrack}
             onNameChange={updatePlaylistName}
             onSave={savePlaylist}
-          />
+          />}
         </div>
       </div>
    </div>
